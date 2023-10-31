@@ -14,7 +14,6 @@ public class DemoController {
     @GetMapping("/demo")
     public String demo() throws Exception {
         demoService.operation1();
-        demoService.operation2(Math.random());
         return "micrometer-tracer-demo";
     }
 }
